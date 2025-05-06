@@ -1,0 +1,329 @@
+.navbar {
+    display: flex;
+   justify-content: space-around;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Adjust background color as needed */
+  }
+  
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .nav-logo img {
+    width: 50px; /* Set the width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    margin-right: 10px; /* Space between logo and text */
+  }
+  
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none !important; /* Make sure underline is removed */
+  color: black !important;          /* Force black text */
+}
+
+.nav-logo p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+  
+  .nav-menu {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 50px; /* Space between menu items */
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    
+    
+  }
+  .nav-menu li a {
+    text-decoration: none !important; /* Make sure underline is removed */
+    color: black !important; 
+    
+    
+  }
+  .nav-login-cart {
+    position: relative; /* Makes it a reference for absolute positioning */
+    display: inline-block; /* Ensures proper layout */
+}
+
+.nav-login-cart img {
+    width: 50px; /* Set the width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.nav-cart-count {
+    position: absolute;
+    top: -5px; /* Adjust position */
+    right: -5px; /* Adjust position */
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    background: red;
+    color: white;
+    margin-top: 25px;
+    margin-right: 195px;
+}
+
+  .nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: rgb(231, 72, 72);
+  }
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-login-cart button{
+    width: 150px;
+    height: 60px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 75px;
+    font-size: 20px;
+    font-weight: 500;
+   
+    cursor: pointer;
+}
+.nav-login-cart button:active{
+    background: #d8040400
+}
+.user-container {
+  display: flex;
+  flex-direction: column; /* Stack icon and text */
+  align-items: center; /* Center align them */
+  gap: 5px; /* Space between icon and text */
+}
+
+.user-icon {
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  border-radius: 50%; /* Make it circular */
+}
+
+.welcome-text {
+  font-size: 12px; /* Make username smaller */
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+.nav-search {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 2px solid black; /* Black border */
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-left: 108px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Black shadow */
+  height: 42px;
+  margin-top: 20px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  width: 200px;
+  border-radius: 20px;
+  background: transparent;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.nav-search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-top: none;
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.suggestions-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.suggestions-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: black;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Desktop nav-menu default */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+/* Default menu styles */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+}
+.cart-icon.active-cart img {
+  border: 2px solid #ff0000;
+  border-radius: 32%;
+  padding: 3px;
+  background-color: #e6f0ff;
+  WIDTH: 54PX;
+  POSITION: RELATIVE;
+  LEFT: 5PX;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: black;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Responsive - show menu in 1 line */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: small;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 0 10px;
+  }
+  .navbar{
+    display: block;
+  }
+
+  .ham-flex{
+    display: flex;
+  }
+  .pos-ham-bar{
+    position: relative;
+    top: 15px;
+  }
+  .nav-search{
+    height: auto;
+    margin: 15px 0px;
+  }
+  .nav-cart-count {
+    top: 0px;
+    left: 104px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .nav-login-cart img{
+    margin-right: 0px;
+  }
+  .cart img{
+    width: 500px;
+  }
+  .nav-login-cart .user-icon{
+    width: 35px;
+    margin-right: -16px;
+  }
+  .nav-login-cart button {
+    height: 46px;
+    position: relative;
+    left: 31px;
+}
+.cart-img{
+  width: 50px !important;
+}
+.welcome-text{
+  position: relative;
+    right: -7px;
+}
+
+}

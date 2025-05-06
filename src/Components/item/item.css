@@ -1,0 +1,86 @@
+/* Container for all product items */
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* Each individual item */
+  .item {
+    flex: 0 0 calc(25% - 20px); /* Ensures 4 per row with 20px gap */
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.6s;
+    text-align: center;
+    position: relative;
+    width: 352px;
+  }
+  
+  .item:hover {
+    transform: scale(1.05);
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  .item p {
+    margin: 6px 0px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .item-prices {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .item-price-new {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .item-price-old {
+    color: rgb(129, 126, 126);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+  }
+  /* Make the selector more specific to increase priority */
+.items-container .item {
+  flex: 0 0 calc(25% - 20px) !important; /* Force 4 per row with !important */
+  max-width: calc(25% - 20px) !important; /* Add max-width constraint */
+  margin-bottom: 20px !important; /* Add some bottom margin */
+}
+
+
+
+
+  /* Responsive Layouts */
+  @media (max-width: 1024px) {
+    .item {
+      flex: 0 0 calc(33.33% - 20px); /* 3 items per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .item {
+      flex: 0 0 calc(50% - 20px); /* 2 items per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .item {
+        flex: 0 0 100%;
+        position: relative;
+        width: 111%;
+    }
+}

@@ -1,0 +1,52 @@
+.Latest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.Latest h1 {
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.Latest hr {
+    width: 87px;
+    height: -7px;
+    border-radius: 10px;
+    background: black;
+    margin-top: 0px;
+}
+
+.Latest-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    width: 90%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* 2 products per row on small screens */
+@media (max-width: 768px) {
+    .Latest-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .Latest h1 {
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 3px;
+    }
+    
+
+        .Latest {
+            position: relative;
+            bottom: 38px;
+            top: 10px;
+        }
+    
+}

@@ -1,0 +1,142 @@
+.newsletter {
+    position: relative;
+    /* display: flex
+; */
+    /* HEIGHT: 82%; */
+    width: 71%;
+    align-items: center;
+    /* margin: 50px 0; */
+    left: 202px;
+    top: 24px;
+  }
+  
+  .newsletter img {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    left: 146px;
+  }
+  
+  /* CONTENT OVERLAY */
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+  }
+  
+  .content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .input input {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    font-size: 16px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+  }
+  
+  .input button {
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .input button:hover {
+    background-color: #ddd;
+  }
+  
+  /* MOBILE RESPONSIVE */
+  @media (max-width: 768px) {
+    .content h1 {
+        font-size: 21px;
+        position: relative;
+        left: 534px;
+        width: 100%;
+        top: 13px;
+        font-weight: 600;
+        right: 10px;
+        background: lightblue;
+    }
+  
+    .content p {
+        font-size: 16px;
+        position: relative;
+        left: 519px;
+        top: 32px;
+        margin-bottom: 33px;
+        width: 236px;
+        color: #ffffff;
+        font-weight: 200;
+    }
+  
+    .input {
+      
+        align-items: center;
+        position: relative;
+        left: 524px;
+    }
+  
+   
+    .input button {
+        position: relative;
+        width: 50%;
+        height: 32px;
+        bottom: 7px;
+        left: -58px;
+        max-width: none;
+    }
+    .newsletter img {
+        width: 100%;
+        left: 43px;
+        right: 10px;
+        bottom: -11px;
+        height: 109px;
+    }
+    .content{
+        color: black;
+        top: 21%;
+        left: -134%;
+    }
+    .input input{
+        height: 30px;
+        position: relative;
+        left: 1px;
+    }
+    .newsletter{
+        left: 0px;
+    }
+
+  }
+  

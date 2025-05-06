@@ -1,0 +1,119 @@
+.verify-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../../Components/Assets/signupbg.jpg');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(2px);
+    padding: 20px;
+  }
+  
+  .verify-form {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .verify-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .verify-message {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .verify-message.error {
+    color: #e74c3c;
+  }
+  
+  .verify-message.success {
+    color: #2ecc71;
+  }
+  
+  .verify-form input {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+  }
+  
+  .verify-form input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .verify-form button {
+    padding: 12px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .verify-form button:disabled {
+    background-color: #7fbce6;
+    cursor: not-allowed;
+  }
+  
+  .verify-form button:hover:not(:disabled) {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive styles */
+  
+  @media screen and (max-width: 992px) {
+    .verify-form {
+      max-width: 90%;
+      width: 380px;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .verify-form {
+      padding: 20px 15px;
+      max-width: 100%;
+      width: 100%;
+    }
+  
+    .verify-title {
+      font-size: 22px;
+    }
+  
+    .verify-form input,
+    .verify-form button {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 993px) {
+    .verify-container {
+      justify-content: flex-start; /* or flex-end */
+    }
+  
+    .verify-form {
+      position: relative;
+      left: 0; /* try 0 first */
+     
+    }
+  }
+  

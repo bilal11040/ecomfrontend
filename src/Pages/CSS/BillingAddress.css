@@ -1,0 +1,119 @@
+.billing-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .billing-container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex: 1 1 300px;
+  }
+  
+  .form-section {
+    max-width: 600px;
+  }
+  
+  .summary-section {
+    max-width: 300px;
+  }
+  
+  .billing-container h2,
+  .billing-container h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2f3640;
+  }
+  
+  .billing-form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #2f3640;
+  }
+  
+  .billing-form input,
+  .billing-form select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .billing-form button {
+    margin-top: 2rem;
+    padding: 0.75rem;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #0984e3;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .billing-form button:hover {
+    background-color: #74b9ff;
+  }
+  
+  .cart-totals,
+  .totals-row {
+    margin-top: 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .totals-row:last-child {
+    border-bottom: none;
+  }
+  .back-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #e0e0e0;
+  }
+  @media screen and (max-width: 768px) {
+    .billing-wrapper {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .form-section,
+    .summary-section {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .billing-wrapper {
+      flex-direction: column;
+    }
+    .form-section {
+      order: 2;
+    }
+    .summary-section {
+      order: 1;
+      WIDTH: 257PX;
+    }
+  }

@@ -1,0 +1,98 @@
+.support-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #fefefe;
+    font-family: Arial, sans-serif;
+    gap: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; /* Prevent overflow */
+    box-sizing: border-box;
+    overflow-x: hidden; /* Hide horizontal scroll */
+  }
+  
+  .support-left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+  }
+  
+  .support-left h1 {
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 10px;
+  }
+  
+  .support-left .highlight {
+    color: #008756;
+  }
+  
+  .support-left p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .support-points {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .support-right {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+  }
+  
+  .support-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .support-form input,
+  .support-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .support-form button {
+    background-color: #008756;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  .support-form button:hover {
+    background-color: #00714c;
+  }
+  
+  .disclaimer {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 10px;
+    text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+  .support-right{
+    position: relative;
+    left: -47px;
+}
+  }

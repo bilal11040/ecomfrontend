@@ -1,0 +1,129 @@
+/* CSS/Signup.css */
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../../Components/Assets/signupbg.jpg');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(2px);
+  padding: 20px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  background: rgba(255, 255, 255, 0.2); /* Light transparency */
+  backdrop-filter: blur(10px);          /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);  /* Safari support */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional subtle border */
+}
+
+
+.signup-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.signup-message {
+  color: #e74c3c;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.signup-form input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+.signup-form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.signup-form button {
+  padding: 12px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:disabled {
+  background-color: #7fbce6;
+  cursor: not-allowed;
+}
+
+.signup-form button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.login-link {
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.login-link a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Different Screen Sizes */
+
+/* Mobile and Tablet (up to 992px) */
+@media screen and (max-width: 992px) {
+  .signup-form {
+    position: static; /* Remove positioning for mobile */
+    max-width: 90%;
+    width: 380px;
+  }
+}
+
+/* Small Phones (up to 375px) */
+@media screen and (max-width: 375px) {
+  .signup-form {
+    padding: 20px 15px;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .signup-title {
+    font-size: 22px;
+  }
+  
+  .signup-form input,
+  .signup-form button {
+    padding: 10px;
+  }
+}
+
+/* Desktop (larger than 992px) */
+@media screen and (min-width: 993px) {
+  .signup-form {
+    position: relative;
+    left: -530px; /* Original left positioning for desktop */
+  }
+}

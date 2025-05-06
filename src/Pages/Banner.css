@@ -1,0 +1,109 @@
+.banner {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: left;
+  width: 90%;
+  max-width: 600px;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Headings */
+.banner-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.banner-content h3 {
+  font-size: 22px;
+  margin: 0;
+}
+
+/* Button */
+.banner-content button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.banner-content button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .banner {
+    height: 300px;
+  }
+
+  .banner-content h2 {
+    font-size: 24px;
+  }
+
+  .banner-content h3 {
+    font-size: 18px;
+  }
+
+  .banner-content {
+
+    text-align: left;
+    left: 112px;
+    width: 50%;
+    transform: translate(-50%, -50%);;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner-content h2 {
+    font-size: 30px;
+  }
+
+  .banner-content h3 {
+    font-size: 20px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+  .banner-content h2 {
+    font-size: 48px;
+  }
+
+  .banner-content h3 {
+    font-size: 32px;
+  }
+}

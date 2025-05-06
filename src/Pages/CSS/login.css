@@ -1,0 +1,82 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../../Components/Assets/signupbg.jpg');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(2px);
+  padding: 20px;
+  }
+  
+  .login-box {
+    display: flex;
+  flex-direction: column;
+  width: 380px;
+  background: rgba(255, 255, 255, 0.2); /* Light transparency */
+  backdrop-filter: blur(10px);          /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);  /* Safari support */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional subtle border */
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background: #5b86e5;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background: #4a76d2;
+  }
+  
+  .message {
+    color: green;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 500px) {
+    .login-box {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .login-button {
+      font-size: 14px;
+    }
+  }
+  

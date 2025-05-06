@@ -1,0 +1,5 @@
+.heading {
+    background-color: #e20d0d; /* Sets a red background color */
+    color: #ffffff; /* Sets the text color to white */
+    padding: 40px 20px; /* Adds 40px padding to the top and bottom, and 20px to the left and right */
+}
