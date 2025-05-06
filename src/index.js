@@ -4,7 +4,7 @@ import "./index.css"; // Global CSS file
 import App from "./App"; // Main application component
 import reportWebVitals from "./reportWebVitals"; // Performance measurement
 import { UserProvider } from "./Context/Allheadings"; // User context provider
-import { ShopContextProvider } from "./Context/ShopContext"; // Shop context provider
+
 
 
 // Root element where the React app will be mounted

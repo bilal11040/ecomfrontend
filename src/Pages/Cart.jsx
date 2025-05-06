@@ -14,9 +14,7 @@ const Cart = () => {
   const [promoCode, setPromoCode] = useState("");
   const [discount, setDiscount] = useState(0);
   const [cartWithDetails, setCartWithDetails] = useState([]);
-const handlegoback =() =>{
-  navigate(-1);
-}
+
   // Initialize cart when component mounts to ensure fresh data
   useEffect(() => {
     if (initialized) {

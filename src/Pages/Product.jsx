@@ -10,10 +10,10 @@ const Product = () => {
     window.scrollTo(0, 0);
   }, []);
   const { products, addToCart } = useContext(ShopContext);
-  const { userId } = useContext(AuthContext);
+
   const { productId } = useParams();
   const [searchParams] = useSearchParams();
-  const source = searchParams.get("source"); // currently unused but good for future enhancements
+
   const navigate = useNavigate();
 
   const [selectedSize, setSelectedSize] = useState("");
