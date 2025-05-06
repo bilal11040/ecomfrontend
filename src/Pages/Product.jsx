@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { ShopContext } from "../Context/ShopContext";
-import { useParams, useSearchParams, useNavigate } from "react-router-dom";
-import { AuthContext } from "../Context/AuthContext";
+import { useParams, useNavigate } from "react-router-dom";
+
 
 import "./CSS/Product.css";
 
@@ -12,7 +12,7 @@ const Product = () => {
   const { products, addToCart } = useContext(ShopContext);
 
   const { productId } = useParams();
-  const [searchParams] = useSearchParams();
+
 
   const navigate = useNavigate();
 
